@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.dea0fc43.css",
+    "main.js": "/static/js/main.3ebc76b0.js",
+    "static/media/hall.png": "/static/media/hall.7bfc2c5bc6230bea3889.png",
+    "static/media/slytherin.jpg": "/static/media/slytherin.31c0b5893431f86c56a2.jpg",
+    "static/media/hufflepuff.jpg": "/static/media/hufflepuff.a9fb804053de1c962029.jpg",
+    "static/media/gryffindor.jpg": "/static/media/gryffindor.6ae4729ecb6f312137e4.jpg",
+    "static/media/ravenclaw.jpg": "/static/media/ravenclaw.6c82be33cc21fc00cf12.jpg",
+    "static/media/paper.png": "/static/media/paper.a5de895e5bcbe1f45253.png",
+    "static/media/gryffindor.webp": "/static/media/gryffindor.d34d51e6b5e350cf5cea.webp",
+    "static/media/hufflepuff.webp": "/static/media/hufflepuff.cdf710273ac634a0ec2b.webp",
+    "static/media/ravenclaw.webp": "/static/media/ravenclaw.41f865f8f6182a3dc171.webp",
+    "static/media/death-eaters.webp": "/static/media/death-eaters.e183ea285247808d4640.webp",
+    "static/media/slytherin.webp": "/static/media/slytherin.02a068cbc6d96dd85dea.webp",
+    "static/media/death-eaters.jpg": "/static/media/death-eaters.731ee510158de026c8f1.jpg",
+    "index.html": "/index.html",
+    "main.dea0fc43.css.map": "/static/css/main.dea0fc43.css.map",
+    "main.3ebc76b0.js.map": "/static/js/main.3ebc76b0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dea0fc43.css",
+    "static/js/main.3ebc76b0.js"
+  ]
+}

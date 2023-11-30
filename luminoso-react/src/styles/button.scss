@@ -1,0 +1,127 @@
+$gold_color: rgb(205, 157, 53);
+
+@mixin button($bcolor, $url, $x1, $y1, $bor, $col) {
+    background: $bcolor;
+    -webkit-mask: url($url);
+    mask: url($url);
+    -webkit-mask-size: $x1 $y1;
+    mask-size: $x1 $y1;
+    border: $bor;
+    color: $col;
+}
+
+.button-container {
+    position: relative;
+    width: 100px;
+    height: 50px;
+    overflow: hidden;
+    border: none;
+    font-size: 1.3rem;
+    transition: 0.5s;
+    letter-spacing: 1px;
+    border-radius: 8px;
+    box-shadow: rgb(254, 247, 193) 0 0 10px 2px;
+
+    button.fst {
+        width: 101%;
+        height: 100%;
+        font-size: 1.3rem;
+        letter-spacing: 1px;
+        font-weight: bold;
+
+        @include button($gold_color,
+                "https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png",
+                2300%,
+                100%,
+                none, #fff);
+        cursor: pointer;
+        -webkit-animation: ani2 0.7s steps(22) forwards;
+        animation: ani2 0.7s steps(22) forwards;
+
+        &:hover {
+            -webkit-animation: ani 0.7s steps(22) forwards;
+            animation: ani 0.7s steps(22) forwards;
+        }
+    }
+
+    button.sec {
+        width: 101%;
+        height: 100%;
+        font-size: 1.3rem;
+        letter-spacing: 1px;
+        font-weight: bold;
+
+        @include button($gold_color,
+                "https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png",
+                3000%,
+                100%,
+                none,
+                #fff);
+        cursor: pointer;
+        -webkit-animation: ani2 0.7s steps(29) forwards;
+        animation: ani2 0.7s steps(29) forwards;
+
+        &:hover {
+            -webkit-animation: ani 0.7s steps(29) forwards;
+            animation: ani 0.7s steps(29) forwards;
+        }
+    }
+}
+
+.mas {
+    position: absolute;
+    text-align: center;
+    height: 100%;
+    width: 101%;
+    letter-spacing: 1px;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+@-webkit-keyframes ani {
+    from {
+        -webkit-mask-position: 0 0;
+        mask-position: 0 0;
+    }
+
+    to {
+        -webkit-mask-position: 100% 0;
+        mask-position: 100% 0;
+    }
+}
+
+@keyframes ani {
+    from {
+        -webkit-mask-position: 0 0;
+        mask-position: 0 0;
+    }
+
+    to {
+        -webkit-mask-position: 100% 0;
+        mask-position: 100% 0;
+    }
+}
+
+@-webkit-keyframes ani2 {
+    from {
+        -webkit-mask-position: 100% 0;
+        mask-position: 100% 0;
+    }
+
+    to {
+        -webkit-mask-position: 0 0;
+        mask-position: 0 0;
+    }
+}
+
+@keyframes ani2 {
+    from {
+        -webkit-mask-position: 100% 0;
+        mask-position: 100% 0;
+    }
+
+    to {
+        -webkit-mask-position: 0 0;
+        mask-position: 0 0;
+    }
+}
